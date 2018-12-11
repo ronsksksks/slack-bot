@@ -1,15 +1,16 @@
 package main
 
 import (
-	"github.com/lob-inc/rssp/server/shared/logger"
-	"github.com/nlopes/slack"
-	"github.com/riona/slack-bot/mura-bot/schedules"
+	"github.com/ronsksksks/slack-bot/mura-bot/schedules"
 	"log"
 	"os"
+
+	"github.com/lob-inc/rssp/server/shared/logger"
+	"github.com/nlopes/slack"
 )
 
 func main() {
-	token := os.Getenv("MURABOT")
+	token := os.Getenv("SLACKBOT")
 	api := slack.New(token)
 
 	// WebSocketでSlack RTM APIに接続する

@@ -15,7 +15,7 @@ type GoogleCalender struct {
 	Client *http.Client
 }
 
-func GetClient(config *oauth2.Config) (*GoogleCalender, error) {
+func Client(config *oauth2.Config) (*GoogleCalender, error) {
 	// The file token.json stores the user's access and refresh tokens, and is
 	// created automatically when the authorization flow completes for the first
 	// time.
